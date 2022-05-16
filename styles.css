@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 150px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+    padding-bottom: 50px;
+    background:
+    linear-gradient(rgba(33, 33, 33, 0.1), rgba(0, 0, 0, .1)),
+    url("imeg/nesvizh-1.jpeg") center/cover no-repeat fixed;
+}
+
+.header__title,
+.header__sube-title,
+.about__title,
+.photos__title {
+    color: white;
+}
+
+.header__image {
+    background: url("imeg/nesvizh-3.jpeg") center/cover no-repeat;
+    max-width: 600px;
+    height: 350px;
+    border: 10px solid white;
+    margin: 0 auto;
+}
+
+.about__article {
+    color: white;
+    display: flex;
+    justify-content: center;
+    max-width: 700px;
+    margin: 0 auto;
+    column-gap: 15px;
+    flex-wrap: wrap;
+}
+
+.about__article_image {
+    width: 310px;
+    height: 230px;
+    background: url("imeg/nesvizh-4.jpeg") center/cover no-repeat;
+    margin-bottom: 10px;
+}
+
+.about__article_description {
+    width: 370px;
+}
+
+.photos {
+    max-width: 1200px;
+}
+
+.photos__conteiner {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 60px;
+}
+
+.photos__conteiner__photo {
+    width: 378px;
+    height: 250px;
+}
+
+.photos__conteiner__photo_element_1 {
+    background: url("imeg/nesvizh-6.jpeg") center/cover no-repeat;
+}
+
+.photos__conteiner__photo_element_2 {
+    background: url("imeg/nesvizh-7.jpeg") center/cover no-repeat;
+}
+
+.photos__conteiner__photo_element_3 {
+    background: url("imeg/nesvizh-8.jpeg") center/cover no-repeat;
+}
+
+.photos__conteiner__photo_element_4 {
+    background: url("imeg/nesvizh-9.jpeg") center/cover no-repeat;
+}
+
+.btn {
+    width: 210px;
+    height: 55px;
+    line-height: 50px;
+    background-color: rgb(56, 53, 33);
+    opacity: .8;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin: 40px auto;
+    color: white;
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: .5;
+    background-color: rgb(42, 51, 53);
+}
