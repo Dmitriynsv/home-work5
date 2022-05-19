@@ -1,20 +1,19 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    padding-bottom: 150px;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 20px;
 }
 
 .container {
-    margin: 0 auto;
-    max-width: 1200px;
-    text-align: center;
-    padding-bottom: 50px;
-    background:
-    linear-gradient(rgba(33, 33, 33, 0.1), rgba(0, 0, 0, .1)),
+  margin: 0 auto;
+  max-width: 1200px;
+  text-align: center;
+  padding-bottom: 50px;
+  background: linear-gradient(rgba(33, 33, 33, 0.1), rgba(0, 0, 0, 0.1)),
     url("imeg/nesvizh-1.jpeg") center/cover no-repeat fixed;
 }
 
@@ -22,87 +21,116 @@ body {
 .header__sube-title,
 .about__title,
 .photos__title {
-    color: white;
+  color: white;
 }
 
 .header__image {
-    background: url("imeg/nesvizh-3.jpeg") center/cover no-repeat;
-    max-width: 600px;
-    height: 350px;
-    border: 10px solid white;
-    margin: 0 auto;
+  background: url("imeg/nesvizh-3.jpeg") center/cover no-repeat;
+  max-width: 600px;
+  height: 350px;
+  border: 5px solid white;
+  margin: 0 auto;
 }
 
 .about__article {
-    color: white;
-    display: flex;
-    justify-content: center;
-    max-width: 700px;
-    margin: 0 auto;
-    column-gap: 15px;
-    flex-wrap: wrap;
+  color: white;
+  display: flex;
+  justify-content: center;
+  max-width: 700px;
+  margin: 0 auto;
+  column-gap: 15px;
+  flex-wrap: wrap;
 }
 
 .about__article_image {
-    width: 310px;
-    height: 230px;
-    background: url("imeg/nesvizh-4.jpeg") center/cover no-repeat;
-    margin-bottom: 10px;
+  width: 310px;
+  height: 230px;
+  background: url("imeg/nesvizh-4.jpeg") center/cover no-repeat;
+  margin-bottom: 10px;
 }
 
 .about__article_description {
-    width: 370px;
+  width: 370px;
 }
 
 .photos {
-    max-width: 1200px;
+  max-width: 1200px;
 }
 
 .photos__conteiner {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    row-gap: 60px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 60px;
 }
 
 .photos__conteiner__photo {
-    width: 378px;
-    height: 250px;
+  width: 378px;
+  height: 250px;
+  box-shadow: -2px 5px 19px 5px rgba(219, 227, 232, 0.5);
 }
 
 .photos__conteiner__photo_element_1 {
-    background: url("imeg/nesvizh-6.jpeg") center/cover no-repeat;
+  background: url("imeg/nesvizh-6.jpeg") center/cover no-repeat;
 }
 
 .photos__conteiner__photo_element_2 {
-    background: url("imeg/nesvizh-7.jpeg") center/cover no-repeat;
+  background: url("imeg/nesvizh-7.jpeg") center/cover no-repeat;
 }
 
 .photos__conteiner__photo_element_3 {
-    background: url("imeg/nesvizh-8.jpeg") center/cover no-repeat;
+  background: url("imeg/nesvizh-8.jpeg") center/cover no-repeat;
 }
 
 .photos__conteiner__photo_element_4 {
-    background: url("imeg/nesvizh-9.jpeg") center/cover no-repeat;
+  background: url("imeg/nesvizh-9.jpeg") center/cover no-repeat;
 }
 
-.btn {
-    width: 210px;
-    height: 55px;
-    line-height: 50px;
-    background-color: rgb(56, 53, 33);
-    opacity: .8;
-    font-size: 20px;
-    text-align: center;
-    text-transform: uppercase;
-    border: 3px solid white;
-    border-radius: 10px;
-    margin: 40px auto;
-    color: white;
+.form {
+  border: 2px solid darkgrey;
+  border-radius: 5px;
+  max-width: 240px;
+  padding: 25px;
+  margin: 50px auto;
+  box-shadow: 6px 4px 20px 2px rgba(234, 239, 243, 0.904);
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
 }
 
-.btn:hover {
-    cursor: pointer;
-    opacity: .5;
-    background-color: rgb(42, 51, 53);
+.form__label {
+  color: white;
+  font-size: 20px;
+}
+
+.form__input-name {
+  padding: 5px;
+}
+
+.form__input-name:focus {
+  outline: 2px ridge rgba(170, 50, 220, 0.6);
+  border-radius: 2px;
+  border-color: transparent;
+}
+
+.form__input-submit {
+  padding: 5px;
+  background-color: rgb(203, 237, 170);
+  border: -5px;
+  border-radius: 30% 30% 5% 5%;
+  box-shadow: 3px 2px 10px 2px rgba(66, 110, 144, 0.36);
+}
+
+.form__input-reset {
+  padding: 5px;
+  border: -5px;
+  border-radius: 5% 5% 30% 30%;
+  background-color: rgb(240, 162, 162);
+  box-shadow: 3px 2px 10px 2px rgba(66, 110, 144, 0.36);
+}
+
+.form__input-submit:hover,
+.form__input-reset:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
