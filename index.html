@@ -1,58 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>Nesvizh</title>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="container">
-        <header class="header">
-            <h1 class="header__title">Несвиж</h1>
-            <h3 class="header__sube-title">Историческое место</h3>
-            <div class="header__image"></div>
-        </header>
+      <header class="header">
+        <h1 class="header__title">Несвиж</h1>
+        <h3 class="header__sube-title">Историческое место</h3>
+        <div class="header__image"></div>
+      </header>
 
-        <section class="about">
-            <h3 class="about__title">Зарождение города</h3>
-            <div class="about__article">
-                <div class="about__article_image"></div>
-                <div class="about__article_description">
-                    <h4>Краткая справка</h4>
-                    <p>Несвижский замок — дворцово-замковый комплекс, находящийся в северо-восточной части города
-                        Несвижа в
-                        Минской области, памятник архитектуры XVI-XVIII веков. Заложен князем Н. Х. Радзивиллом Сироткой
-                        в
-                        1583 году, на месте деревянного замка (1533).</p>
-                </div>
-            </div>
+      <section class="about">
+        <h3 class="about__title">Зарождение города</h3>
+        <div class="about__article">
+          <div class="about__article_image"></div>
+          <div class="about__article_description">
+            <h4>Краткая справка</h4>
+            <p>
+              Несвижский замок — дворцово-замковый комплекс, находящийся в
+              северо-восточной части города Несвижа в Минской области, памятник
+              архитектуры XVI-XVIII веков. Заложен князем Н. Х. Радзивиллом
+              Сироткой в 1583 году, на месте деревянного замка (1533).
+            </p>
+          </div>
+        </div>
 
-            <section class="photos">
-                <h2 class="photos__title">Фото замка внутри</h2>
-                <div class="photos__conteiner">
-                    <div class="photos__conteiner__photo photos__conteiner__photo_element_1 "></div>
-                    <div class="photos__conteiner__photo photos__conteiner__photo_element_2 "></div>
-                    <div class="photos__conteiner__photo photos__conteiner__photo_element_3 "></div>
-                    <div class="photos__conteiner__photo photos__conteiner__photo_element_4 "></div>
-                </div>
-            </section>
-
-            <section class="footer">
-                <div class="btn">Купить билет</div>
-            </section>
-            
-            
+        <section class="photos">
+          <h2 class="photos__title">Фото замка внутри</h2>
+          <div class="photos__conteiner">
+            <div
+              class="photos__conteiner__photo photos__conteiner__photo_element_1"
+            ></div>
+            <div
+              class="photos__conteiner__photo photos__conteiner__photo_element_2"
+            ></div>
+            <div
+              class="photos__conteiner__photo photos__conteiner__photo_element_3"
+            ></div>
+            <div
+              class="photos__conteiner__photo photos__conteiner__photo_element_4"
+            ></div>
+          </div>
         </section>
+
+        <section class="footer">
+          <form
+            action="mailto:mobedin@inbox.ru"
+            method="post"
+            class="form"
+            target="_blank"
+          >
+            <label for="input-name" class="form__label"
+              >Заказать экскурсию</label
+            >
+            <input
+              type="text"
+              placeholder="Введите дату посещения"
+              id="input-name"
+              class="form__input-name"
+            />
+
+            <input type="submit" value="отправить" class="form__input-submit" />
+            <input type="reset" value="сбросить" class="form__input-reset" />
+          </form>
+        </section>
+      </section>
     </div>
-
-</body>
-
+  </body>
 </html>
